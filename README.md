@@ -1,3 +1,5 @@
+credit: QuaggaJS library
+
 # simple-pwa.  ** BARCODE SCANNER
 
 ## Objective

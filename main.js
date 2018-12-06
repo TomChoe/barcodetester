@@ -75,14 +75,15 @@ if ('serviceWorker' in navigator) {
                   facingMode: "environment"
               },
               area: {
-                top: "0%",
-                right: "0%",
-                left: "0%",
-                bottom: "0%"
+                top: "50%",
+                right: "50%",
+                left: "50%",
+                bottom: "50%"
               },
               singleChannel: true
           },
           locate: false,
+          frequency: 5,
           decoder: {
               readers: [
                   "code_128_reader",
