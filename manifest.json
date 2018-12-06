@@ -1,0 +1,13 @@
+{
+	"name": "PWA App",
+	"short_name": "PWA-App",
+	"icons": [{
+		"src": "./simple.png",
+		"sizes": "192x192",
+		"type": "image/png"
+	}],
+	"start_url": "https://tomchoe.github.io/barcodepwa/",
+	"display": "standalone",
+  	"background_color": "#3E4EB8",
+ 	"theme_color": "#2F3BA2"
+}
