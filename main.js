@@ -75,9 +75,9 @@ if ('serviceWorker' in navigator) {
                   facingMode: "environment"
               },
               area: {
-                top: "0%",
+                top: "30%",
                 right: "0%",
-                left: "0%",
+                left: "30%",
                 bottom: "0%"
               },
               singleChannel: true
