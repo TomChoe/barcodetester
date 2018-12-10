@@ -75,9 +75,9 @@ if ('serviceWorker' in navigator) {
                   facingMode: "environment"
               },
               area: {
-                top: "30%",
+                top: "0%",
                 right: "0%",
-                left: "30%",
+                left: "0%",
                 bottom: "0%"
               },
               singleChannel: true
@@ -128,6 +128,8 @@ if ('serviceWorker' in navigator) {
       Quagga.onProcessed(function (result) {
           var drawingCtx = Quagga.canvas.ctx.overlay,
           drawingCanvas = Quagga.canvas.dom.overlay;
+
+          drawingCtx.barcode
 
           if (result) {
               if (result.boxes) {
