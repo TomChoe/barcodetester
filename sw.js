@@ -30,7 +30,7 @@ self.addEventListener('activate', async e => {
 
 self.addEventListener('fetch', async e => {
 	const req = e.request;
-	const dataUrl = 'https://tomchoe.github.io/barcodepwa';
+	const dataUrl = 'https://tomchoe.github.io/barcodetester';
 
 	if(req.url.indexOf(dataUrl) > -1) {
 		e.respondWith(networkFirst(req));
@@ -58,21 +58,3 @@ async function networkFirst(req) {
 		return cachedResponse
 	}
 };
-
-// interacting with the push notification api
-self.addEventListener('notificationclose', (e) => {
-	let notification = e.notification;
-	let primaryKey = notification.data.primaryKey;
-
-	console.log('Closed notification: ' + primaryKey);
-});
-
-// listening for push event
-self.addEventListener('push', e => {
-	console.log('this is from the server');
-	const data = e.data.json();
-	self.registration.showNotification(data.title, {
-		body: 'this from the server!!!!!!'
-	})
-});
-
