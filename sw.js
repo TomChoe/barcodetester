@@ -31,6 +31,7 @@ self.addEventListener('activate', async e => {
 self.addEventListener('fetch', async e => {
 	const req = e.request;
 	const dataUrl = 'https://tomchoe.github.io/barcodetester';
+	console.log('this is fetch in sw, e.request.url -> ', e.request.url)
 
 	if(req.url.indexOf(dataUrl) > -1) {
 		e.respondWith(networkFirst(req));
